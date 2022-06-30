@@ -8,9 +8,14 @@ import { Component, OnInit } from '@angular/core';
 export class TestComponent implements OnInit {
 
   public name = "Jhon";
+  public siteUrl = window.location.href;
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  userName() {
+    return "returning data by method calling"+" "+this.name;
   }
 
 }
